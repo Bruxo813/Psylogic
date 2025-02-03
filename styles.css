@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light background to match the logo */
+    color: #2d3748;
+    line-height: 1.6;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #2d3748;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+.section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f4f8; /* Light background to match the logo */
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.logo {
+    max-width: 250px;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3)); /* Shadow only on the logo */
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #4299e1, #38bdf8);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #3182ce, #06b6d4);
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.grid-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Side-by-Side Images */
+.side-image {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form */
+#contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    color: #4a5568;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f7fafc;
+    color: #2d3748;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4299e1;
+    outline: none;
+}
+
+button {
+    background: linear-gradient(135deg, #4299e1, #38bdf8);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Bubble */
+.contact-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #38bdf8, #06b6d4);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+}
+
+.contact-bubble:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+
+    #contact-form {
+        padding: 20px;
+    }
+}

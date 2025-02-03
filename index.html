@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psylogic Mental Health</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="logo-container">
+            <img src="Psylogic LogoColor.jpeg" alt="Psylogic Mental Health Logo" class="logo">
+            <h1>Psylogic Mental Health</h1>
+            <p class="tagline">Empowering Minds, Healing Hearts</p>
+            <a href="#consultations" class="cta-button">Book a Consultation</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="Talking face.jpeg" alt="Talking Face" class="side-image">
+            </div>
+            <div class="grid-item">
+                <img src="Sad smile face.jpeg" alt="Sad Smile Face" class="side-image">
+            </div>
+        </div>
+        <div class="grid-item">
+            <p>Hi, I’m Jenn, a licensed mental health professional dedicated to helping individuals achieve emotional well-being. With years of experience and a compassionate approach, I provide personalized care to support your mental health journey.</p>
+        </div>
+    </section>
+
+    <!-- More About the Business Section -->
+    <section id="business" class="section">
+        <h2>More About Psylogic Mental Health</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <p>At Psylogic Mental Health, we believe in a holistic approach to mental wellness. Our mission is to provide a safe, supportive space for individuals to explore their emotions, develop coping strategies, and achieve personal growth.</p>
+            </div>
+            <div class="grid-item">
+                <img src="therapy.jpg" alt="Therapy Session" class="business-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Now Taking Consultations Section -->
+    <section id="consultations" class="section">
+        <h2>Now Taking Consultations</h2>
+        <p>Ready to take the first step toward better mental health? Book a consultation today!</p>
+        <a href="#contact-form" class="cta-button">Schedule Now</a>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="section">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Contact Bubble -->
+    <div class="contact-bubble">
+        <a href="#contact-form">Contact Us</a>
+    </div>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
